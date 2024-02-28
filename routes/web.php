@@ -22,3 +22,8 @@ Route::get('/about', function () {
 });
 
 // Create additional Routes below
+
+Route::get('/feedback', [FeedbackController::class, 'create']);
+Route::post('/feedback/send', [FeedbackController::class, 'send']);
+
+
